@@ -3,7 +3,7 @@ using System.Collections;
 
 public class spawner_mejora : MonoBehaviour {
 
-	public GameObject enemigo;
+	public GameObject objeto;
 	private int call;
 	public int nbeca;
 	private Vector3 spawn;
@@ -33,7 +33,7 @@ public class spawner_mejora : MonoBehaviour {
 		spawn.y =  coordi.position.y;
 		spawn.z = Random.Range (((coordi.position.z)-(coordi.localScale.z)/2)+0.5f, ((coordi.position.z)+(coordi.localScale.z)/2)-0.5f);
 
-		Instantiate (enemigo, spawn, Quaternion.identity);
+		Instantiate (objeto, spawn, Quaternion.identity);
 		call++;
 
 	}
